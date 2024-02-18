@@ -51,9 +51,15 @@ export default function App() {
       <p> Cookies.(*・‿・)ノ⌒*:･ﾟ✧</p>
       <Timer count={count} setCount={setCount} />
       {/* <ResetButton functiontoChangeCount={setCount} /> */}
-      <button onClick={incrementCounter}>Get another cookie</button>
-      <button onClick={decreaseCounter}>Delete cookie</button>
-      <button onClick={resetCounter}>Reset</button>{" "}
+      <button className="chippy" onClick={incrementCounter}>
+        Im a Cookie ☉ ‿ ⚆
+      </button>
+      <button className="deli" onClick={resetCounter}>
+        Reset
+      </button>{" "}
+      <button className="deli" onClick={decreaseCounter}>
+        Delete cookie
+      </button>
       <button onClick={BuyCookie}>BUY Cookie. Price: 1</button>
       <button onClick={BuyGrandma}>BUY Grandma. Price: 10</button>
       <button onClick={BuyCake}>BUY Cake. Price: 100</button>
